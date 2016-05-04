@@ -7,13 +7,14 @@
 
 		var urlBase = 'http://swapi.co/api/';
 
-		function getPeople() {
+		function getPeople(pageNum) {
 
 			var deferred = $q.defer();
 			
-			$http.get(urlBase + 'people').then(function (resp) {
+			$http.get(urlBase + 'people?page='+ pageNum).then(function (resp) {
+                debugger
 				if (resp.status === 200) {
-					deferred.resolve(resp.data.results);
+					deferred.resolve(resp.data);
 				}
 				else {
 					deferred.reject(resp.statusText);
