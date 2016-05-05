@@ -1,0 +1,17 @@
+{
+  "name": "jquery-events",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kristopher Cowley <kristopherleecowley@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kristophercowley/starwars-components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

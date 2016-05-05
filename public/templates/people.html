@@ -1,6 +1,7 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-        <!--<get-data next="vm.next" prev="vm.prev"></get-data>-->
+        <get-data next="vm.next" prev="vm.prev"></get-data>
+		<!---->
         <!--<div class="btn-group pull-right">
             <button class="btn btn-primary" ng-click="$ctrl.getData(-1)" ng-disabled="!$ctrl.prev">PREV</button>
             <button class="btn btn-primary" ng-click="$ctrl.getData(1)" ng-disabled="!$ctrl.next">NEXT</button>
@@ -9,7 +10,7 @@
 	</div>
 	<div class="panel-body">
 		<div class="text-center">
-			<star-wars-person ng-repeat="person in $ctrl.people track by $index" person="person"></star-wars-personr>
+			<star-wars-person ng-repeat="person in $ctrl.people track by $index" person="person"></star-wars-person>
 		</div>
 	</div>
 </div>
