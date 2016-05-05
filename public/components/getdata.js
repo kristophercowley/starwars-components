@@ -6,18 +6,17 @@
 	.component('getData', {
 		templateUrl: 'templates/getdata.html',
 		controller: GetDataController,
+		controllerAs:"vm",
 		bindings:{
-			next: "=",
-			prev: "=",
-			getdata: "="
+			next: "<",
+			prev: "<",
+			changeByOne: "=",
 		}
 	});
     
     function GetDataController(){
         var vm = this;
-		vm.getdata(1)
-		vm.nextprev = function(n){
-			vm.getData(n)
-		}
+		// vm.next = next;
+		// vm.prev = prev;
     }
 })()

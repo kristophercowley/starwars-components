@@ -23,6 +23,7 @@
 		function activate() {
 			
             vm.getData = function(direction){
+				// alert("Yay, getdata!")
                 vm.currentPage += direction
                 starWarsApi.getPeople(vm.currentPage).then(function(data){
                     vm.people = data.results;
